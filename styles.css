@@ -41,6 +41,8 @@ a {
   margin: 0 auto;
   overflow: hidden;
   height: 92px;
+  background-color: lightblue;
+  border-style: solid;
 }
 
 .nav__link {
