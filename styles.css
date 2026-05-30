@@ -14,13 +14,14 @@ h1 {
   color: rgb(231, 203, 203);
 }
 h2 {
-  color: rgb(230, 213, 206);
+  color: white;
   position: absolute;
 }
 .blue {
   color: rgb(80, 80, 244);
   font-size: 180px;
   margin-top: 40px;
+  width: 100%
 }
 
 li {
@@ -92,16 +93,18 @@ input {
   justify-content: center;
   flex-direction: column;
   font-size: 66px;
+  margin-top: 40px
 }
 .header__description {
-  text-align: center;
+ 
   position: absolute;
   transform: translate(25%, 25%);
 }
 .header__container {
+  margin-top: 8px;
   position: relative;
-  height: 100vh;
-  background-color: rgb(189, 226, 249);
+  overflow:hidden;
+  
 }
 .header__img {
   scale: 80%;
@@ -111,5 +114,5 @@ input {
   z-index: 0;
 }
 .landing__text {
-  padding-top: 140px;
+  padding-top: 80px;
 }
