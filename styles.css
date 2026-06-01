@@ -80,6 +80,10 @@ a {
 ul {
   display: flex;
 }
+.input__wrapper{
+  display: flex;
+
+}
 input {
   background-color: #fff;
   border-radius: 20px;
@@ -119,12 +123,16 @@ input {
   border-radius: 8px;
   transform: translateY(60px);
   z-index: 0;
+  opacity:100%;
 }
 .landing__text {
   padding-top: 80px;
 }
 .header__background--wrapper{
   max-height: 800px
+}
+.header__background{
+  opacity:40%;
 }
 
 /* FOOTER */
