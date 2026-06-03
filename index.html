@@ -3,19 +3,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Movies</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" /> <link rel="js" href="index.js" />
   <script
     src="https://kit.fontawesome.com/c8e4d183c2.js"
     crossorigin="anonymous"
   ></script>
   <script src="index.js"></script>
-  <style type="text/css"></style>
-  <link rel="stylesheet" href="../css/font-awesome.css">
-    <script src="https://kit.fontawesome.com/bcd0085322.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="styles.css">
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-  <section id="landing">
+  <section id="nav">
     <nav>
       <div class="nav__container">
         <div class="logo__img--wrapper">
@@ -23,19 +24,19 @@
         </div>
         <div class="input__wrapper">
           
-          <input type="text" placeholder="search movie title" /><button>
-            <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="search movie title" />
+          <button class="search__button" ">
+            <i class="fa-solid fa-magnifying-glass"onclick="shrinkImg(event) ></i>
           </button>
         </div>
         <div class="nav__link__wrapper">
           <ul class="nav__links">
             <li><a href="#" class="nav__link">Login or Sign-up</a></li>
           </ul>
-        </div>
-        </ul>
+        </div>       
       </div>
-    </nav>
-    <header>
+    </nav> 
+    <section id="header">
       <div class="header__container">
         <figure>
           <img class="header__img" src="night__sky2.png" />
@@ -56,8 +57,7 @@
           />
         </figure>
       </div>
-    </header>
-  </section>
+  
   <section id="footer">
     <div class="container">
       <ul class="footer__links">
