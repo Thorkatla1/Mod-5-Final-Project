@@ -7,6 +7,22 @@
   margin: 0 auto;
   outline: none;
 }
+.row{
+  width: 100%;
+
+}
+button{
+  background-color: lightblue;  
+  color: black;
+  font-size: 20px; 
+  padding: 4px 16px;
+  border-radius: 12px;
+  width: 12%;
+}
+.container {
+  width: 100%;
+  padding: 0 20px;
+}     
 img {
   width: 100%;
 }
@@ -21,7 +37,7 @@ h2 {
   color: rgb(80, 80, 244);
   font-size: 180px;
   margin-top: 40px;
-  width: 100%
+  width: 100%;
 }
 
 li {
@@ -33,7 +49,8 @@ a {
 
 /* LANDING SECTION */
 
-#landing, #footer{
+#landing,
+#footer {
   margin-top: 8px;
 }
 
@@ -45,7 +62,6 @@ a {
   overflow: hidden;
   height: 120px;
   background-color: rgb(38, 9, 155);
-
   border-style: solid;
 }
 
@@ -68,29 +84,31 @@ a {
   border-radius: 8px;
   border-width: 2px;
   border: 2px solid #0a1f44;
- 
 }
 .nav__links {
-  display: flex;  
+  display: flex;
 }
-.nav__link{
+.nav__link {
   border: 1px solid #0a1f44;
+}
+.input__wrapper{
+display:flex;
 }
 
 ul {
   display: flex;
 }
-.input__wrapper{
+.input__wrapper {
   display: flex;
-
+}
+.input__wrapper{
+  width: 40%;
 }
 input {
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 12px;
   border: 2px solid #0a1f44;
-  color: #0a1f44;
-  display: inline-block;
-  height: 60%;
+  color: #0a1f44;  
   line-height: 40px;
   outline: none;
   padding: 0 15px;
@@ -103,17 +121,17 @@ input {
 .header__container {
   margin-top: 8px;
   position: relative;
-  overflow:hidden;
-  
-}.main__header {
+  overflow: hidden;
+}
+.main__header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-size: 66px;
-  margin-top: 40px
+  margin-top: 40px;
 }
-.header__description { 
+.header__description {
   position: absolute;
   transform: translate(25%, 25%);
 }
@@ -123,21 +141,31 @@ input {
   border-radius: 8px;
   transform: translateY(60px);
   z-index: 0;
-  opacity:100%;
+  opacity: 100%;
 }
 .landing__text {
   padding-top: 80px;
 }
-.header__background--wrapper{
-  max-height: 800px
+.header__background--wrapper {
+  max-height: 800px;
 }
-.header__background{
-  opacity:40%;
+.header__background:before {
+  opacity: 20%;
+  z-index: -1;
+  position: absolute;
 }
 
 /* FOOTER */
 
-#footer{
-height: 120px;
- background-color: rgb(38, 9, 155);
+#footer {
+  height: 120px;
+  background-color: rgb(38, 9, 155);
+  display: flex;
+  align-items: center;
+  
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;  
 }
