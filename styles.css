@@ -66,6 +66,7 @@ a {
   border-style: solid;
 }
 
+
 .nav__link {
   margin-left: 40px;
   text-decoration: none;
@@ -75,6 +76,7 @@ a {
   padding: 4px 16px;
   background-color: white;
   border-radius: 8px;
+  border: 1px solid #0a1f44;
 }
 .logo__img--wrapper {
   width: 15%;
@@ -85,10 +87,6 @@ a {
   border-radius: 8px;
   border-width: 2px;
   border: 2px solid #0a1f44;
-}
-
-.nav__link {
-  border: 1px solid #0a1f44;
 }
 .input__wrapper{
 display:flex;
