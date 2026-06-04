@@ -4,13 +4,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Movies</title>
 
-  <script src="https://example.com/fontawesome/v7.0.1/js/conflict-detection.js"></script>
-
+  <script
+    src="https://kit.fontawesome.com/c8e4d183c2.js"
+    crossorigin="anonymous"
+  ></script>
   <script src="index.js"></script>
-  
   <link rel="stylesheet" href="styles.css" />
-
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
 </head>
+
 <body>
   <section id="nav">
     <nav>
@@ -21,7 +26,7 @@
         <div class="input__wrapper">
           <input type="text" placeholder="search movie title" />
           <button class="search__button" onclick="shrinkImg(event)">
-            <i class="fa fa-search" id="sear"></i>
+            <i class="fa fa-search" id="sky__img"></i>
           </button>
         </div>
         <div class="nav__link__wrapper">
@@ -32,18 +37,24 @@
       </div>
     </nav>
   </section>
+
   <section id="header">
     <div class="header__container">
-      <figure>
-        <img class="header__img" src="night__sky2.png" />
-      </figure>
       <div class="header__description">
-        <h1 class="main__header">
-          <span class="blue">SKY</span> <br />
-          Look-up and see the stars!
-        </h1>
-        <h2 class="landing__text">What would you like to watch tonight?</h2>
-        <a href="#features"> </a>
+        <div class="main__header--wrapper">
+          <figure class="header__img--wrapper">
+            <img class="header__img" src="night__sky2.png" />
+          </figure>
+          <div class="main__header">
+            <h1>
+              <span class="blue__text">SKY</span>
+            </h1>
+
+            <h2>look up and see the stars!</h2>
+
+            <h3 class="landing__text">What would you like to watch tonight?</h3>
+          </div>
+        </div>
       </div>
       <figure class="header__background--wrapper">
         <img
@@ -59,7 +70,7 @@
       <ul class="footer__links">
         <li><a href="#" class="nav__link">Buy Gift Cards</a></li>
         <li><a href="#" class="nav__link">Merch</a></li>
-        <li><a href="#" class="nav__link">Copyright2026 Sky Inc.</a></li>
+        <li><a href="#" class="nav__link">Copyright 2026 Sky Inc.</a></li>
       </ul>
     </div>
   </section>

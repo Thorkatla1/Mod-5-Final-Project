@@ -1,8 +1,6 @@
 console.log('hello world');
 
 function shrinkImg(event) {
-    const img = document.querySelector('.header__img');
-    img.style.width = '50%';
+    const img = document.querySelector('.header__img--wrapper');
+    img.style.width = '20%';
 }
-let img = document.createElement('img');
-img.classList.add('header__container');
