@@ -28,6 +28,17 @@ img {
 h1 {
   color: rgb(231, 203, 203);
 }
+.hidden-content{
+  display: none;
+}
+.hidden-content,.page-2__img--text {
+  position: absolute;
+  transform: translate(32px, 22px);
+  font-size: 52;
+  display: block;
+
+}
+
 h2 {
   color: white;
   font-size: 62px;
@@ -121,6 +132,7 @@ input {
 }
 .main__header--wrapper {
   padding-top: 100px;
+  position: relative;
 }
 .main__header {
   display: flex;
@@ -142,6 +154,7 @@ input {
   border-radius: 8px;
   z-index: 0;
   opacity: 100%;
+  border: 2px solid whitesmoke;
 }
 .blue__text {
   color: rgb(80, 80, 244);
@@ -161,6 +174,24 @@ input {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
+}
+.card__container {
+  display: flex;
+
+  justify-content: space-between;
+  margin-top: 40px;
+  z-index: 10;
+}
+.user-card__container {
+  display: flex;
+  justify-content: space between;
+  padding-right: 20px;
+}
+.user-card__text {
+  color: white;
+  font-size: 24px;
+  background-color: rgb(213, 213, 250);
+  color: #0a1f44;
 }
 
 /* FOOTER */
