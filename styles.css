@@ -16,8 +16,10 @@ button {
   font-size: 20px;
   padding: 4px 16px;
   border-radius: 12px;
-  width: 12%;
+  width: 60px;
+  height: 60px;
 }
+
 .container {
   width: 100%;
   padding: 0 20px;
@@ -28,15 +30,16 @@ img {
 h1 {
   color: rgb(231, 203, 203);
 }
-.hidden-content{
+.hidden-content {
   display: none;
 }
-.hidden-content,.page-2__img--text {
+
+
+.page-2__img--text {
   position: absolute;
   transform: translate(32px, 22px);
   font-size: 52;
   display: block;
-
 }
 
 h2 {
@@ -107,6 +110,7 @@ ul {
 }
 .input__wrapper {
   width: 40%;
+  height: 60px
 }
 input {
   background-color: #fff;
@@ -121,6 +125,15 @@ input {
   font-size: 24px;
   padding-left: 25px;
 }
+button .search__button {
+  background-color: lightblue;
+  color: black;
+  font-size: 20px;
+  padding: 4px 16px;
+  border-radius: 12px;
+  width: 60px;
+  height: 100%;
+} 
 .header__container {
   margin-top: 8px;
   position: relative;
@@ -195,6 +208,13 @@ input {
 }
 
 /*page 2 */
+.p2header__container {
+  height: 760px;
+  overflow: hidden;
+}
+.p2-background {
+  position: absolute;
+}
 
 
 /* FOOTER */
