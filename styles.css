@@ -30,11 +30,6 @@ img {
 h1 {
   color: rgb(231, 203, 203);
 }
-.hidden-content {
-  display: none;
-}
-
-
 .page-2__img--text {
   position: absolute;
   transform: translate(32px, 22px);
@@ -107,10 +102,8 @@ ul {
 }
 .input__wrapper {
   display: flex;
-}
-.input__wrapper {
   width: 40%;
-  height: 60px
+  height: 60px;
 }
 input {
   background-color: #fff;
@@ -133,11 +126,13 @@ button .search__button {
   border-radius: 12px;
   width: 60px;
   height: 100%;
-} 
+}
+
 .header__container {
   margin-top: 8px;
   position: relative;
   overflow: hidden;
+
 }
 .header__row {
   width: 80%;
@@ -179,7 +174,8 @@ button .search__button {
   font-size: 24px;
   padding-top: 72px;
 }
-.header__background {
+
+.header__background--wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -187,35 +183,48 @@ button .search__button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
+  overflow: hidden
 }
-.card__container {
-  display: flex;
-
-  justify-content: space-between;
-  margin-top: 40px;
-  z-index: 10;
-}
-.user-card__container {
-  display: flex;
-  justify-content: space between;
-  padding-right: 20px;
-}
-.user-card__text {
-  color: white;
-  font-size: 24px;
-  background-color: rgb(213, 213, 250);
-  color: #0a1f44;
+.header__background{
+  height: 100%;
 }
 
 /*page 2 */
+
 .p2header__container {
-  height: 760px;
+ height: 100%vh;
   overflow: hidden;
-}
-.p2-background {
-  position: absolute;
+  position: relative;
 }
 
+.p2-background {
+  position: absolute;
+  top: 0;
+  bottom: 9;
+}
+.p2header__row{
+  height: 60vh;
+  margin-top: 80px;
+  margin-bottom:60px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 80%;
+}
+.card {
+  height: 320px;
+  background-color: white;
+  width: 24%;
+  margin: 20px 20px;
+  border-radius: 12px;
+  max-width: 200px;
+  max-height: 240px;
+  
+}
 
 /* FOOTER */
 
