@@ -30,6 +30,8 @@ img {
 h1 {
   color: rgb(231, 203, 203);
 }
+
+
 .page-2__img--text {
   position: absolute;
   transform: translate(32px, 22px);
@@ -127,12 +129,10 @@ button .search__button {
   width: 60px;
   height: 100%;
 }
-
 .header__container {
   margin-top: 8px;
   position: relative;
   overflow: hidden;
-
 }
 .header__row {
   width: 80%;
