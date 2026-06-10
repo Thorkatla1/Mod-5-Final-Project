@@ -32,12 +32,7 @@ h1 {
 }
 
 
-.page-2__img--text {
-  position: absolute;
-  transform: translate(32px, 22px);
-  font-size: 52;
-  display: block;
-}
+
 
 h2 {
   color: white;
@@ -192,7 +187,7 @@ button .search__button {
 /*page 2 */
 
 .p2header__container {
- height: 100%vh;
+
   overflow: hidden;
   position: relative;
 }
@@ -203,7 +198,6 @@ button .search__button {
   bottom: 9;
 }
 .p2header__row{
-  height: 60vh;
   margin-top: 80px;
   margin-bottom:60px;
 }
@@ -213,7 +207,7 @@ button .search__button {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  width: 80%;
+  width: 90%;
 }
 .card {
   height: 320px;
@@ -221,10 +215,11 @@ button .search__button {
   width: 24%;
   margin: 20px 20px;
   border-radius: 12px;
-  max-width: 200px;
+  width: calc(100%/4);
   max-height: 240px;
   
 }
+
 
 /* FOOTER */
 
