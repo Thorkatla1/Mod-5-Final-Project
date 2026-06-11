@@ -32,11 +32,10 @@ h1 {
 }
 
 
-
-
 h2 {
   color: white;
   font-size: 62px;
+ 
 }
 
 li {
@@ -44,6 +43,11 @@ li {
 }
 a {
   text-decoration: none;
+}
+#filter{
+  height: 40px;
+  border-radius: 8px;
+  width: 220px;
 }
 
 /* LANDING SECTION */

@@ -32,9 +32,17 @@
             ></a>
           </div>
           <div class="nav__link__wrapper">
-            <ul class="nav__links">
-              <li><a href="#" class="nav__link">Sort</a></li>
-            </ul>
+            <div class="movies__header">
+              <select id="filter" onchange="filterMovies(event)">
+                <option value="" disabled selected>Sort</option>
+                <option value="A to Z">A to Z</option>
+                <option value="HIGH_TO_LOW">Z to A</option>
+                <option value="NEWEST_TO_OLDEST">Newest to Oldest</option>
+                <option value="OLDEST_TO_NEWEST">Oldest to Newest</option>
+              </select>
+            </div>
+            <div class="movies"></div>
+            
           </div>
         </div>
       </nav>
