@@ -128,7 +128,8 @@ button .search__button {
   width: 60px;
   height: 100%;
 }
-.header__container {
+.header__container, 
+.p2header__container{
   margin-top: 8px;
   position: relative;
   overflow: hidden;
@@ -205,7 +206,7 @@ button .search__button {
   margin-top: 80px;
   margin-bottom:60px;
 }
-.cards {
+.movies {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -213,14 +214,14 @@ button .search__button {
   gap: 40px;
   width: 90%;
 }
-.card {
+.movie {
   height: 320px;
   background-color: white;
   width: 24%;
   margin: 20px 20px;
   border-radius: 12px;
   width: calc(100%/4);
-  max-height: 240px;
+  max-height: 320px;
   
 }
 
