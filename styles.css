@@ -214,13 +214,13 @@ button .search__button {
   gap: 40px;
   width: 90%;
 }
-.movie-card {
+.movie {
   height: 320px;
   background-color: white;
   margin: 20px 20px;
   border-radius: 12px;
-
   max-height: 320px;
+  max-width: calc(100%/3)
   
 }
 

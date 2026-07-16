@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movies</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -17,23 +17,31 @@
       <nav>
         <div class="nav__container">
           <div class="logo__img--wrapper">
-            <img class="logo" src="sky.logo.png" alt="" />
+            <img class="logo" src="sky.logo.png" alt="Sky Logo" />
           </div>
           <div class="input__wrapper">
-            <input type="text" placeholder="search movie title" />
-            <a href="page2.html"
-              ><button class="search__button">
-                <i class="fa fa-search" id="sky__img"></i></button
-            ></a>
+            <input type="text" placeholder="Search movie title" />
+            <a href="page2.html"></a>
+            <button class="search__button" aria-label="Search">
+              <i class="fa fa-search" id="sky__img"></i>
+            </button>
           </div>
           <div class="nav__link__wrapper">
             <div class="movies__header">
-              <select id="filter" onchange="filterMovies(event)">
-                <option value="" disabled selected>Sort</option>
-                <option value="A TO Z">A to Z</option>
-                <option value="Z TO A">Z to A</option>
-                <option value="NEWEST_TO_OLDEST">Newest to Oldest</option>
-                <option value="OLDEST_TO_NEWEST">Oldest to Newest</option>
+              <select id="filter">
+                <option value="" disabled selected onchange="">Sort</option>
+                <option value="A TO Z" onchange="filterMovies(event)">
+                  A to Z
+                </option>
+                <option value="Z TO A" onchange="filterMovies(event)">
+                  Z to A
+                </option>
+                <option value="NEWEST TO OLDEST" onchange="filterMovies(event)">
+                  Newest to Oldest
+                </option>
+                <option value="OLDEST TO NEWEST" onchange="filterMovies(event)">
+                  Oldest to Newest
+                </option>
               </select>
             </div>
           </div>
@@ -47,10 +55,18 @@
             <img
               class="header__background"
               src="assets/film real black.png"
-              alt=""
+              alt="Film Reel Background"
             />
           </figure>
-          <div class="movies"></div>
+          <div class="movies">
+            <div class="movies__row row">
+              <div class="movies__container container">
+                <div class="movies__list">
+                  <span class="poster"> </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
