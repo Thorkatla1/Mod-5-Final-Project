@@ -213,8 +213,10 @@ button .search__button {
   justify-content: center;
   gap: 40px;
   width: 90%;
+  max-width:calc(100%/3 vw)
 }
-.movie {
+
+.movies__list {
   height: 320px;
   background-color: white;
   margin: 20px 20px;
