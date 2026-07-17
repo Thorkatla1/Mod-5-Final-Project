@@ -13,10 +13,11 @@ async function main(movieName) {
 
   document.querySelector(".movies__list").innerHTML = movies
     .map((movie) => {
-      return `<img src="${movie.Poster}" alt="${movie.Title}">`;
+      return `<img class = "img__poster" src="${movie.Poster}" alt="${movie.Title}">`;
     })
     .join("");
-  // how do i know this will show 10 in the console? comes from this individual api
+  // Q: how do i know this will show 10 in the console? 
+  // A:  this individual api is coded to show only 10 in the console.
 }
 
 function inputData(event) {
