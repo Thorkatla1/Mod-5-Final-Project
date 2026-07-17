@@ -14,10 +14,10 @@ img {
   width: 100%;
   margin: 0;
 }
-.img__poster {
+.movie {
   max-width: calc(100% / 3);
   padding: 40px;
-  padding: 40px;
+
 }
 
 button {
@@ -228,7 +228,7 @@ button .search__button {
 }
 
 .movies__list {
-  display: flex-box;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px;
