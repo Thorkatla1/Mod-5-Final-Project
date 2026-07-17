@@ -2,23 +2,27 @@ console.log("hello world");
 // const posterRef = document.querySelector(".poster");
 // console.log(posterRef);
 
-async function main() {
+async function main(movieName) {
   const response = await fetch(
-    "https://www.omdbapi.com/?s=marvel&apikey=3a3dec69",
+    `https://www.omdbapi.com/?s=${movieName}&apikey=3a3dec69`,
   );
+  console.log(movieName)
   const movieData = await response.json();
-  const movies = movieData.Search.slice(0, 6); // limits to 6 movies
+  console.log(movieData);
+  const movies = movieData.Search.slice(0, 6);
 
   document.querySelector(".movies__list").innerHTML = movies
     .map((movie) => {
       return `<img src="${movie.Poster}" alt="${movie.Title}">`;
     })
     .join("");
-  // how do i know this will show 10 in the console?
-  console.log(movieData);
+  // how do i know this will show 10 in the console? comes from this individual api
 }
-main();
 
+function inputData(event) {
+  main(event.target.value);
+  console.log(event.target.value);
+}
 
 // function filterMovies(filter) {
 //   if (filter === "A TO Z") {
