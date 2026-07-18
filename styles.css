@@ -14,11 +14,6 @@ img {
   width: 100%;
   margin: 0;
 }
-.movie {
-  max-width: calc(100% / 3);
-  padding: 40px;
-
-}
 
 button {
   background-color: lightblue;
@@ -196,7 +191,7 @@ button .search__button {
 .p2header__container {
   overflow: hidden;
   position: relative;
-  height: 100% vh;
+  min-height: 110vh;
 }
 
 .p2-background {
@@ -229,10 +224,24 @@ button .search__button {
 
 .movies__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 40px;
-  flex-wrap: wrap;
+  gap: 40px;
+}
+.movie__wrapper {
+  max-width: 300px;
+}
+.movie {
+  background-color: white;
+  height: 495px;
+  width: 332px;
+  padding: 32px;
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+
 }
 
 /* FOOTER */
