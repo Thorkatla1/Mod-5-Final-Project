@@ -243,7 +243,7 @@ button .search__button {
   flex-direction: column;
   text-align: left;
   justify-content:flex-end;
-  overflow: hiden;
+  overflow: hidden;
 }
 .movie-year,
 .movie-title {
