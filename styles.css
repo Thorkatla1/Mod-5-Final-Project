@@ -201,11 +201,12 @@ button .search__button {
 }
 .p2header__row {
   margin: 5%vh;
+  margin-top: 80px;
 }
 .movies__container {
   display: flex;
   width: 100%;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .movies.row {
@@ -234,16 +235,28 @@ button .search__button {
   max-width: 300px;
 }
 .movie {
-  background-color: white;
+  background-color: rgb(38, 9, 155);
   height: 495px;
   width: 332px;
-  padding: 32px;
-  display:flex;
+ padding:8px;
+  display: flex;
   flex-direction: column;
   text-align: left;
-
+  justify-content:flex-end;
+  overflow: hiden;
 }
-
+.movie-year,
+.movie-title {
+  color: white;
+}
+.img__poster {
+  max-height: 90%;
+}
+.text__box {
+ margin-top:12px;
+  width: 100%;
+ 
+}
 /* FOOTER */
 
 #footer {

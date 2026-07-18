@@ -49,10 +49,10 @@ async function renderMovies() {
   }
   moviesWrapper.classList.remove("movies__loading");
   document.querySelector(".movies__list").innerHTML = movies
-   .map((movie) => {
+    .map((movie) => {
       return `<div class = <movie__wrapper"><div class = "movie"> 
-      <img class = "img__poster" src="${movie.Poster}" alt="${movie.Title}"><p class="movie-year">${movie.Year}</p>
-      <h3 class="movie-title">${movie.Title}</h3>
+      <img class = "img__poster" src="${movie.Poster}" alt="${movie.Title}"><div class = text__box><p class="movie-year">${movie.Year}</p>
+      <h3 class="movie-title">${movie.Title}</h3></div>
       </div></div>`;
     })
     .join("");
